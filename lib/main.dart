@@ -7,6 +7,7 @@ class WhatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'WhatsApp',
       theme: new ThemeData(
         primaryColor: new Color(0xff075E54),

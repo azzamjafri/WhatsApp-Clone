@@ -23,7 +23,9 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+
       appBar: new AppBar(
+
         title: new Text("WhatsApp"),
         elevation: 0.8,
         bottom: new TabBar(
@@ -36,6 +38,11 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with
             new Tab(text: "CALLS",)
           ],
         ),
+        actions: <Widget>[
+          new Icon(Icons.search),
+          new Padding(padding: const EdgeInsets.symmetric(horizontal: 5.0),),
+          new Icon(Icons.more_vert),
+        ],
       ),
 
 
@@ -53,7 +60,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with
 
       floatingActionButton: new FloatingActionButton(
         backgroundColor: Theme.of(context).accentColor,
-        child: new Icon(Icons.message),
+        child: new Icon(Icons.message, color: Colors.white,),
         onPressed: (){},
         elevation: 10.0,
       ),
